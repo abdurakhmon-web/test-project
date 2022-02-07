@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none !important;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    background: #060002;
+}
+a:hover{
+    color: #fff;
+}
+header{
+    background: url(../images/header-bg_01.jpg) no-repeat center center / cover;
+    width: 100%; 
+    height: 100vh;
+}
+h2{
+    font-size: 36px;
+    color: #69cf17;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.logo{
+    padding: 8px 18px;
+    line-height: 18px;
+    background: #4e9f0d;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    border: 3px solid #62be19;
+    border-radius: 5px;
+}
+nav ul li a{
+    display: block;
+    padding: 37px 26px 31px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #69cf17;
+    transition: .5s;
+}
+nav ul li a.active,
+nav ul li a:hover{
+    color: #fff;
+    background: rgba(105, 207, 23, 0.70);
+}
+nav ul li a span{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    color: #69cf17;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+
+}
+.header-info{
+    margin-top: 165px;
+}
+.header-info h1{
+    font-size: 72px;
+    font-weight: 900;
+    color: #4e9f0d;
+    text-transform: uppercase;
+}
+.header-info span{
+    font-size: 36px;
+    color: #69cf17;
+    text-transform: uppercase;
+}
+.header-info p{
+    font-size: 18px;
+    color: #dedede;
+    margin-top: 30px;
+    margin-bottom: 75px;
+}
+.header-info .header-price{
+    padding: 27px 90px;
+    background: rgba(105, 207, 23, 0.75);
+    color: #dedede;
+    font-size: 60px;
+    font-weight: 100;
+}
+.menu{
+    padding-bottom: 100px;
+}
+.section-menu-nav ul li a{
+    font-size: 20px;
+    font-weight: 700;
+    color: #7a7a7a;
+}
+.section-menu-nav ul li a.active,
+.section-menu-nav ul li a:hover{
+    color: #69cf17;
+}
+.burger-item .burger-img{
+    position: relative;
+    width: 350px;
+    height: 350px;
+}
+.burger-img img{
+    max-width: 100%;
+    height: auto;
+}
+.burger-item .burger-img p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 24px;
+    margin: 0;
+    color: #dedede;
+    padding: 20px 60px;
+    background: rgba(105, 207, 23, 0.70);
+}
+.burger-item .burger-img button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    background: rgba(105, 207, 23, 0.90);
+    color: #fff;
+    border: none;
+    opacity: 0;
+    transition: .5s;
+}
+.burger-item .burger-img button:hover{
+    opacity: 1;
+}
+.burger-item .burger-img:hover p{
+    opacity: 0;
+}
+.burger-item h3{
+    font-size: 24px;
+    font-weight: 700;
+    color: #69cf17;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.burger-item p{
+    color: #dedede;
+    line-height: 24px;
+}
+.recept{
+    padding: 50px 0 100px;
+    background: url(../images/section-bg_02.jpg) no-repeat center top / cover;
+    color: #fff;
+}
+
+.recept-text h2::after{
+    content: "";
+    display: block;
+    width: 200px;
+    height: 1px;
+    background: #69cf17;
+    margin: 20px auto;
+}
+.recept-text p{
+    font-size: 18px;
+    line-height: 24px;
+}
+
+footer{
+    padding: 40px 0 50px;
+    color: #fff;
+}
+.footer-tel{
+    font-size: 24px;
+    font-weight: 700;
+    color: #69cf17;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    transition: .5s;
+}
+.footer-menu{
+    margin-bottom: 25px !important;
+}
+.footer-menu ul li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 100;
+}
+.footer-bottom p{
+    font-weight: 100;
+}
+
+
+@media (max-width:992px){
+    .burger-item .burger-img{
+        width: 290px;
+        height: 290px;
+    }
+}
+@media (max-width:768px){
+    .header-info h1{
+        font-size: 60px;
+    }
+    .header-info .header-price{
+        padding: 15px 65px;
+        font-size: 50px;
+    }
+}
+@media (max-width:576px){
+    .header-info h1{
+        font-size: 44px;
+    }
+    .header-info span{
+        font-size: 30px;
+    }
+    .header-info p{
+        font-size: 16px;
+    }
+    .burger-item .burger-img{
+        width: 320px;
+        height: 320px;
+    }
+}
+@media (max-width:360px){
+    .header-info h1{
+        font-size: 35px;
+    }
+    .header-info span{
+        font-size: 20px;
+    }
+    .header-info p{
+        font-size: 14px;
+    }
+    .header-info .header-price{
+        font-size: 30px;
+    }
+    .section-menu-nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .recept-text p{
+        font-size: 14px;
+    }
+    .footer-tel{
+        font-size: 16px;
+    }
+    .footer-menu ul li a{
+        font-size: 12px;
+    }
+    .footer-bottom p{
+        font-size: 15px;
+    }
+}
